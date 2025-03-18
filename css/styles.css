@@ -17,6 +17,7 @@ body {
     padding: 10px; /* 设置菜单栏内边距 */
     z-index: 1000; /* 确保菜单栏在其他内容之上 */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 添加阴影效果，增强视觉层次 */
+    text-align: justify; /* 两端对齐 */
 }
 
 .menu a:hover {
