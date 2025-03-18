@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>地铁模拟游戏</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #333;
+            color: white;
+        }
+        #game-container {
+            text-align: center;
+        }
+        #train {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        #status {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        #passengers {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        #timer {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        #message {
+            font-size: 24px;
+            color: #00cc00;
+        }
+        .key {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #555;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div id="game-container">
+        <div id="train">🚇</div>
+        <div id="status">状态：停车中</div>
+        <div id="passengers">乘客：0 人</div>
+        <div id="timer">剩余时间：30 秒</div>
+        <div id="message"></div>
+        <div>
+            <div class="key">开门：O 键</div>
+            <div class="key">关门：C 键</div>
+            <div class="key">启动：S 键</div>
+        </div>
+    </div>
+
+    <script>
+        const train = document.getElementById('train');
+        const statusDisplay = document.getElementById('status');
+        const passengersDisplay = document.getElementById('passengers');
+        const timerDisplay = document.getElementById('timer');
+        const messageDisplay = document.getElementById('message');
+
+        let isDoorOpen = false;
+        let isTrainMoving = false;
+        let passengers = 0;
+        let timeLeft = 30;
+        let gameInterval;
+
+        // 初始化游戏
+        function startGame() {
+            timeLeft = 30;
+            passengers = 0;
+            isDoorOpen = false;
+            isTrainMoving = false;
+            statusDisplay.textContent = '状态：停车中';
+            passengersDisplay.textContent = '乘客：0 人';
+            messageDisplay.textContent = '';
+            timerDisplay.textContent = `剩余时间：${timeLeft} 秒`;
+
+            // 开始计时
+            clearInterval(gameInterval);
+            gameInterval = setInterval(updateGame, 1000);
+
+            // 提示玩家操作
+            messageDisplay.textContent = '请按 O 键开门';
+        }
+
+        // 更新游戏状态
+        function updateGame() {
+            timeLeft--;
+            timerDisplay.textContent = `剩余时间：${timeLeft} 秒`;
+
+            // 检查是否超时
+            if (timeLeft <= 0) {
+                endGame(false);
+            }
+        }
+
+        // 结束游戏
+        function endGame(isWin) {
+            clearInterval(gameInterval);
+            if (isWin) {
+                messageDisplay.textContent = '恭喜你，完成任务！';
+            } else {
+                messageDisplay.textContent = '游戏失败，请重试！';
+            }
+        }
+
+        // 玩家控制
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'o' || e.key === 'O') {
+                if (!isTrainMoving && !isDoorOpen) {
+                    isDoorOpen = true;
+                    statusDisplay.textContent = '状态：开门中';
+                    messageDisplay.textContent = '请等待乘客上下车...';
+                    setTimeout(() => {
+                        passengers += 10; // 模拟乘客上下车
+                        passengersDisplay.textContent = `乘客：${passengers} 人`;
+                        messageDisplay.textContent = '请按 C 键关门';
+                    }, 3000); // 等待 3 秒
+                }
+            } else if (e.key === 'c' || e.key === 'C') {
+                if (isDoorOpen) {
+                    isDoorOpen = false;
+                    statusDisplay.textContent = '状态：关门中';
+                    messageDisplay.textContent = '请按 S 键启动列车';
+                }
+            } else if (e.key === 's' || e.key === 'S') {
+                if (!isDoorOpen && !isTrainMoving) {
+                    isTrainMoving = true;
+                    statusDisplay.textContent = '状态：运行中';
+                    messageDisplay.textContent = '列车正在前往下一站...';
+                    setTimeout(() => {
+                        isTrainMoving = false;
+                        statusDisplay.textContent = '状态：停车中';
+                        messageDisplay.textContent = '请按 O 键开门';
+                        if (timeLeft > 0) {
+                            endGame(true); // 完成任务
+                        }
+                    }, 5000); // 模拟运行 5 秒
+                }
+            }
+        });
+
+        // 启动游戏
+        startGame();
+    </script>
+</body>
+</html>
