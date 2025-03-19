@@ -25,6 +25,17 @@ body {
             border-radius: 5px;
         }
 
+/* 手机端样式调整 */
+@media (max-width: 768px) {
+    .menu {
+        padding: 5px; /* 减少内边距，使菜单更紧凑 */
+    }
+
+    .menu-item {
+        font-size: 12px; /* 缩小字体大小 */
+        padding: 6px 10px; /* 调整内边距 */
+    }
+}
 
 /* 菜单栏中的无序列表样式 */
 .menu ul {
