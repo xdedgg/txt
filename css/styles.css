@@ -24,7 +24,7 @@ body {
         padding: 0.5rem 0.75rem; /* 调整内边距 */
         display: flex; /* 启用 flexbox 布局 */
         overflow-x: auto; /* 允许横向滚动，超出部分隐藏 */
-        font-size: 1rem; /* 减小字体大小 */
+        font-size: 1.5rem; /* 减小字体大小 */
         white-space: nowrap; /* 禁止文字换行 */
         box-sizing: border-box; /* 确保内边距不影响宽度计算 */
     }
