@@ -32,8 +32,8 @@ body {
     }
 
     .menu-item {
-        font-size: 12px; /* 缩小字体大小 */
-        padding: 6px 10px; /* 调整内边距 */
+        font-size: 8px; /* 缩小字体大小 */
+        padding: 2px 5px; /* 调整内边距 */
     }
 }
 
