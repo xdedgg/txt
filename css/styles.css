@@ -19,7 +19,16 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 添加阴影效果，增强视觉层次 */
     text-align: justify; /* 两端对齐 */
 }
-
+@media (max-width: 768px) {
+    .menu {
+        padding: 0.5rem 0.75rem; /* 调整内边距 */
+        display: flex; /* 启用 flexbox 布局 */
+        overflow-x: auto; /* 允许横向滚动，超出部分隐藏 */
+        font-size: 1rem; /* 减小字体大小 */
+        white-space: nowrap; /* 禁止文字换行 */
+        box-sizing: border-box; /* 确保内边距不影响宽度计算 */
+    }
+}
 .menu a:hover {
             background-color: #00BFFF; /* 鼠标悬停时更亮的蓝色 */
             border-radius: 5px;
