@@ -28,7 +28,7 @@ body {
 /* 手机端样式调整 */
 @media (max-width: 768px) {
     .menu {
-        padding: 5px; /* 减少内边距，使菜单更紧凑 */
+        padding: 2px; /* 减少内边距，使菜单更紧凑 */
     }
 
     .menu-item {
