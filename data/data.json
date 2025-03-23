@@ -3,11 +3,11 @@
     {
         "name": "刘园",
         "transfer": "",
-        "feature": "起点站",
+        "feature": "普通站",
         "image": "liuyuan.jpg"
     },
     {
-        "name": "北洋大学站",
+        "name": "瑞景新苑",
         "transfer": "",
         "feature": "普通站",
         "image": "beiyangdaxue.jpg"
@@ -19,7 +19,7 @@
         "image": "jiayuanli.jpg"
     },
     {
-        "name": "瑞景新苑",
+        "name": "无",
         "transfer": "",
         "feature": "普通站",
         "image": "ruijingxinyuan.jpg"
@@ -50,7 +50,7 @@
     },
     {
         "name": "西北角",
-        "transfer": "2号线",
+        "transfer": "",
         "feature": "换乘站",
         "image": "xibeijiao.jpg"
     },
@@ -61,7 +61,7 @@
         "image": "xinanjiao.jpg"
     },
     {
-        "name": "海光寺",
+        "name": "无",
         "transfer": "",
         "feature": "普通站",
         "image": "haiguangsi.jpg"
@@ -73,7 +73,7 @@
         "image": "erweilu.jpg"
     },
     {
-        "name": "鞍山道",
+        "name": "海光寺鞍山道",
         "transfer": "",
         "feature": "普通站",
         "image": "anshandao.jpg"
@@ -195,7 +195,7 @@
     {
         "name": "双桥河",
         "transfer": "",
-        "feature": "终点站",
+        "feature": "普通站",
         "image": "shuangqiaohe.jpg"
     }
 ],
@@ -203,7 +203,7 @@
     {
         "name": "曹庄",
         "transfer": "",
-        "feature": "起点站",
+        "feature": "普通站",
         "image": "caozhuang.jpg"
     },
     {
@@ -256,7 +256,7 @@
     },
     {
         "name": "建国道",
-        "transfer": "13号线（规划）",
+        "transfer": "",
         "feature": "换乘站",
         "image": "jiananguodao.jpg"
     },
@@ -286,8 +286,8 @@
     },
     {
         "name": "翠阜新村",
-        "transfer": "12号线（规划）",
-        "feature": "换乘站",
+        "transfer": "",
+        "feature": "普通站",
         "image": "cuifuxincun.jpg"
     },
     {
@@ -317,22 +317,22 @@
     {
         "name": "滨海国际机场",
         "transfer": "",
-        "feature": "终点站",
+        "feature": "普通站",
         "image": "binhaiguojihangkong.jpg"
     }
 ],
     "line3": [
-        {"name": "南站", "transfer": "10号线", "feature": "换乘站", "image": "nan站.jpg"},
+        {"name": "南站", "transfer": "", "feature": "普通站", "image": "nan站.jpg"},
         {"name": "杨伍庄", "transfer": "", "feature": "普通站", "image": "yangwuzhuang.jpg"},
         {"name": "学府工业区", "transfer": "", "feature": "普通站", "image": "xuefu.jpg"},
         {"name": "高新区", "transfer": "", "feature": "普通站", "image": "gaoxin.jpg"},
         {"name": "大学城", "transfer": "", "feature": "普通站", "image": "daxuecheng.jpg"},
         {"name": "华苑", "transfer": "", "feature": "普通站", "image": "huayuan.jpg"},
         {"name": "王顶堤", "transfer": "", "feature": "普通站", "image": "wangdingdi.jpg"},
-        {"name": "红旗南路", "transfer": "11号线（在建）", "feature": "换乘站", "image": "hongqinanlu.jpg"},
+        {"name": "红旗南路", "transfer": "6号线", "feature": "换乘站", "image": "hongqinanlu.jpg"},
         {"name": "周邓纪念馆", "transfer": "", "feature": "普通站", "image": "zhoudeng.jpg"},
         {"name": "天塔", "transfer": "", "feature": "普通站", "image": "tian.jpg"},
-        {"name": "吴家窑", "transfer": "4号线", "feature": "换乘站", "image": "wujia.jpg"},
+        {"name": "吴家窑", "transfer": "11号线", "feature": "换乘站", "image": "wujia.jpg"},
         {"name": "西康路", "transfer": "", "feature": "普通站", "image": "xikanglu.jpg"},
         {"name": "营口道", "transfer": "1号线", "feature": "换乘站", "image": "yingkoudao.jpg"},
         {"name": "和平路", "transfer": "", "feature": "普通站", "image": "hepinglu.jpg"},
@@ -347,7 +347,7 @@
         {"name": "天士力", "transfer": "", "feature": "普通站", "image": "tianshili.jpg"},
         {"name": "华北集团", "transfer": "", "feature": "普通站", "image": "huabeijituan.jpg"},
         {"name": "丰产河", "transfer": "", "feature": "普通站", "image": "fengchanhe.jpg"},
-        {"name": "小淀", "transfer": "", "feature": "终点站", "image": "xiaodian.jpg"}
+        {"name": "小淀", "transfer": "", "feature": "普通站", "image": "xiaodian.jpg"}
     ],
     "line4": [
         {"name": "东南角", "transfer": "2号线", "feature": "换乘站", "image": "dongnanjiao.jpg"},
@@ -466,12 +466,12 @@
         {"name": "肿瘤医院", "transfer": "5号线、6号线", "feature": "换乘站", "image": "zhongliuyiyuan.jpg"},
         {"name": "体育中心", "transfer": "", "feature": "普通站", "image": "tiyuzhongxin.jpg"},
         {"name": "凌宾路", "transfer": "", "feature": "普通站", "image": "lingbinlu.jpg"},
-        {"name": "赛达路", "transfer": "", "feature": "终点站", "image": "saidalu.jpg"}
+        {"name": "昌凌路", "transfer": "10号线", "feature": "站", "image": "saidalu.jpg"}
     ],
     "line8": [
         {
             "name": "渌水道",
-            "transfer": "6号线一期",
+            "transfer": "6号线",
             "feature": "换乘站",
             "image": "lushuidao.jpg"
         },
@@ -520,7 +520,7 @@
         {
             "name": "咸水沽西",
             "transfer": "",
-            "feature": "终点站",
+            "feature": "普通站",
             "image": "xianshuiquxi.jpg"
         }
     ],
@@ -545,10 +545,10 @@
         {"name": "市民广场", "transfer": "", "feature": "普通站", "image": "shimin.jpg"},
         {"name": "太湖路", "transfer": "", "feature": "普通站", "image": "taihu.jpg"},
         {"name": "会展中心", "transfer": "", "feature": "普通站", "image": "hui.jpg"},
-        {"name": "东海路", "transfer": "", "feature": "终点站", "image": "donghai.jpg"}
+        {"name": "东海路", "transfer": "", "feature": "站", "image": "donghai.jpg"}
     ],
     "line10": [
-        {"name": "于台", "transfer": "", "feature": "起点站", "image": "yutai.jpg"},
+        {"name": "于台", "transfer": "", "feature": "站", "image": "yutai.jpg"},
         {"name": "瑶环路", "transfer": "", "feature": "普通站", "image": "yaohuanlu.jpg"},
         {"name": "昌凌路", "transfer": "5号线", "feature": "换乘站", "image": "changlinglu.jpg"},
         {"name": "丽江道", "transfer": "", "feature": "普通站", "image": "lijiangdao.jpg"},
@@ -570,34 +570,36 @@
         {"name": "屿东城", "transfer": "2号线", "feature": "换乘站", "image": "yudongcheng.jpg"}
     ],
     "line11": [
-        {"name": "东丽六经路站", "transfer": "", "feature": "普通站", "image": "dongli_liujinglu.jpg"},
-        {"name": "东丽三经路站", "transfer": "", "feature": "普通站", "image": "dongli_sanjinglu.jpg"},
-        {"name": "东丽一经路站", "transfer": "", "feature": "普通站", "image": "dongli_yijinglu.jpg"},
-        {"name": "驯海路站", "transfer": "", "feature": "普通站", "image": "xunhailu.jpg"},
-        {"name": "外环辅道站", "transfer": "", "feature": "普通站", "image": "waihuanfudao.jpg"},
-        {"name": "招远路站", "transfer": "", "feature": "普通站", "image": "zhaoyuanlu.jpg"},
-        {"name": "雪莲南路站", "transfer": "", "feature": "普通站", "image": "xuelian_nanlu.jpg"},
-        {"name": "环宇道站", "transfer": "10号线", "feature": "换乘站", "image": "huanjudao.jpg"},
-        {"name": "海河东路站", "transfer": "", "feature": "普通站", "image": "haihedonglu.jpg"},
-        {"name": "学苑北路站", "transfer": "", "feature": "普通站", "image": "xueyuan_beilu.jpg"},
-        {"name": "东江道站", "transfer": "", "feature": "普通站", "image": "dongjiangdao.jpg"},
-        {"name": "陈塘站", "transfer": "", "feature": "普通站", "image": "chentangzhan.jpg"},
-        {"name": "内江路站", "transfer": "", "feature": "普通站", "image": "neijianglu.jpg"},
-        {"name": "澧水道站", "transfer": "8号线（规划）", "feature": "换乘站", "image": "lishuidao.jpg"},
-        {"name": "黑牛城道站", "transfer": "6号线", "feature": "换乘站", "image": "heniuchengdao.jpg"},
-        {"name": "文化中心站", "transfer": "5号线、6号线", "feature": "换乘站", "image": "wenhuazhongxin.jpg"},
-        {"name": "迎宾馆站", "transfer": "", "feature": "普通站", "image": "yingbinzhan.jpg"},
-        {"name": "佟楼站", "transfer": "", "feature": "普通站", "image": "tonglouzhan.jpg"},
-        {"name": "吴家窑站", "transfer": "3号线", "feature": "换乘站", "image": "wujiazhaozhan.jpg"},
-        {"name": "八里台站", "transfer": "7号线（规划）", "feature": "换乘站", "image": "bali.jpg"},
-        {"name": "水上公园西路站", "transfer": "13号线（规划）", "feature": "换乘站", "image": "shangshui.jpg"},
-        {"name": "一中心医院站", "transfer": "6号线", "feature": "换乘站", "image": "yizhongxin.jpg"}
+        {"name": "东丽六经路", "transfer": "", "feature": "普通站", "image": "dongli_liujinglu.jpg"},
+        {"name": "东丽三经路", "transfer": "", "feature": "普通站", "image": "dongli_sanjinglu.jpg"},
+        {"name": "东丽一经路", "transfer": "", "feature": "普通站", "image": "dongli_yijinglu.jpg"},
+        {"name": "驯海路", "transfer": "", "feature": "普通站", "image": "xunhailu.jpg"},
+        {"name": "东丽文体中心", "transfer": "", "feature": "普通站", "image": "waihuanfudao.jpg"},
+        {"name": "招远路", "transfer": "", "feature": "普通站", "image": "zhaoyuanlu.jpg"},
+        {"name": "雪莲南路", "transfer": "", "feature": "普通站", "image": "xuelian_nanlu.jpg"},
+        {"name": "环宇道", "transfer": "10号线", "feature": "换乘站", "image": "huanjudao.jpg"},
+        {"name": "海河东路", "transfer": "", "feature": "普通站", "image": "haihedonglu.jpg"},
+        {"name": "学苑北路", "transfer": "", "feature": "普通站", "image": "xueyuan_beilu.jpg"},
+        {"name": "东江道", "transfer": "站外联程1号线华山里", "feature": "普通站", "image": "dongjiangdao.jpg"},
+        {"name": "陈塘", "transfer": "", "feature": "普通站", "image": "chentangzhan.jpg"},
+        {"name": "内江路", "transfer": "", "feature": "普通站", "image": "neijianglu.jpg"},
+        {"name": "澧水道", "transfer": "8号线（规划）", "feature": "换乘站", "image": "lishuidao.jpg"},
+        {"name": "医大二院", "transfer": "6号线", "feature": "换乘站", "image": "heniuchengdao.jpg"},
+        {"name": "文化中心", "transfer": "5号线、6号线", "feature": "换乘站", "image": "wenhuazhongxin.jpg"},
+        {"name": "迎宾馆", "transfer": "", "feature": "普通站", "image": "yingbinzhan.jpg"},
+        {"name": "佟楼", "transfer": "", "feature": "普通站", "image": "tonglouzhan.jpg"},
+        {"name": "吴家窑", "transfer": "3号线", "feature": "换乘站", "image": "wujiazhaozhan.jpg"},
+        {"name": "南开大学八里台", "transfer": "7号线（规划）", "feature": "换乘站", "image": "bali.jpg"},
+        {"name": "水上公园西路", "transfer": "", "feature": "普通站", "image": "shangshui.jpg"},
+        {"name": "一中心医院站", "transfer": "6号线", "feature": "换乘站", "image": "yizhongxin.jpg"},
+        {"name": "澄江路", "transfer": "", "feature": "站", "image": "yizhongxin.jpg"},
+        {"name": "文洁路", "transfer": "", "feature": "站", "image": "yizhongxin.jpg"}
     ],
     "line_jinjing": [
-        {"name": "京华东道站", "transfer": "5号线", "feature": "换乘站", "image": "jinghuadongdao.jpg"},
-        {"name": "精武镇站", "transfer": "", "feature": "普通站", "image": "jingwuzhen.jpg"},
-        {"name": "团泊健康城站", "transfer": "", "feature": "普通站", "image": "tuanbojiankangcheng.jpg"},
-        {"name": "团泊医学园站", "transfer": "", "feature": "终点站", "image": "tuanboyixueyuan.jpg"}
+        {"name": "京华东道", "transfer": "5号线", "feature": "换乘站", "image": "jinghuadongdao.jpg"},
+        {"name": "精武", "transfer": "", "feature": "普通站", "image": "jingwuzhen.jpg"},
+        {"name": "团泊健康城", "transfer": "", "feature": "普通站", "image": "tuanbojiankangcheng.jpg"},
+        {"name": "团泊医学园", "transfer": "", "feature": "普通站", "image": "tuanboyixueyuan.jpg"}
     ]
 
 
